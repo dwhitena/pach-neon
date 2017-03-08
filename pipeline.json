@@ -5,20 +5,20 @@
   "transform": {
     "image": "kaixhin/neon",
     "cmd": [ 
-	"python",
-	"examples/imdb/train.py",
-	"-f",
-	"/pfs/training/labeledTrainData.tsv",
-	"-e",
-	"2",
-	"-eval",
-	"1",
-	"-s",
-	"/pfs/out/imdb.p",
-	"--vocab_file",
-	"/pfs/out/imdb.vocab"
+	"python", 
+	"examples/imdb/train.py", 
+	"-f", 
+	"/pfs/training/labeledTrainData.tsv", 
+	"-e", 
+	"2", 
+	"-eval", 
+	"1", 
+	"-s", 
+	"/pfs/out/imdb.p", 
+	"--vocab_file", 
+	"/pfs/out/imdb.vocab" 
     ],
-    "stdin": [],
+    "stdin": [ ],
     "overwrite": true
   },
   "parallelism_spec": {
@@ -68,7 +68,7 @@
       "repo": {
 	"name": "model"
       },
-      "model": "global"
+      "method": "global"
     }
   ]
 }
