@@ -29,7 +29,7 @@ Because we have already deployed the pipeline, the training portion of the pipel
 
 ```
 pachctl start-commit training -b master
-pachctl put-file training <commit id returned from the above command> -f labeledTrainData.tsv -f labeledTrainData.tsv
+pachctl put-file training <commit id returned from the above command> labeledTrainData.tsv -f labeledTrainData.tsv
 pachctl finish-commit training <commit id returned from the above command>
 ```
 
